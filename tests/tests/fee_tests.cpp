@@ -116,14 +116,14 @@ BOOST_AUTO_TEST_CASE(asset_claim_fees_test)
       const asset izzy_satoshi = asset(1, izzycoin_id);
       const asset jill_satoshi = asset(1, jillcoin_id);
 
-      // Izzycoin is worth 100 BTS
+      // Izzycoin is worth 100 DBT
       price_feed feed;
       feed.settlement_price = price( _izzy(1), _core(100) );
       feed.maintenance_collateral_ratio = 175 * GRAPHENE_COLLATERAL_RATIO_DENOM / 100;
       feed.maximum_short_squeeze_ratio = 150 * GRAPHENE_COLLATERAL_RATIO_DENOM / 100;
       publish_feed( izzycoin_id(db), izzy, feed );
 
-      // Jillcoin is worth 30 BTS
+      // Jillcoin is worth 30 DBT
       feed.settlement_price = price( _jill(1), _core(30) );
       feed.maintenance_collateral_ratio = 175 * GRAPHENE_COLLATERAL_RATIO_DENOM / 100;
       feed.maximum_short_squeeze_ratio = 150 * GRAPHENE_COLLATERAL_RATIO_DENOM / 100;

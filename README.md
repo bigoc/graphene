@@ -1,9 +1,9 @@
 Intro for new developers
 ------------------------
 
-This is a quick introduction to get new developers up to speed on Graphene.
+This is a quick introduction to get new developers up to speed on Bagcoin.
 
-Starting Graphene
+Starting Bagcoin
 -----------------
 
 For Ubuntu 14.04 LTS users, see this link first:
@@ -11,8 +11,8 @@ For Ubuntu 14.04 LTS users, see this link first:
 
 and then proceed with:
 
-    git clone https://github.com/cryptonomex/graphene.git
-    cd graphene
+    git clone https://github.com/bagcoin/bagcoin-2.git
+    cd bagcoin-2
     git submodule update --init --recursive
     cmake -DCMAKE_BUILD_TYPE=Debug .
     make
@@ -40,7 +40,7 @@ To import your initial balance:
 If you send private keys over this connection, `rpc-endpoint` should be bound to localhost for security.
 
 A list of CLI wallet commands is available
-[here](https://github.com/cryptonomex/graphene/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp).
+[here](https://github.com/bagcoin/bagcoin-2/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp).
 
 Code coverage testing
 ---------------------
@@ -104,12 +104,12 @@ Here is an example using `wscat` package from `npm` for websockets:
     $ npm install -g wscat
     $ wscat -c ws://127.0.0.1:8090
     > {"id":1, "method":"call", "params":[0,"get_accounts",[["1.2.0"]]]}
-    < {"id":1,"result":[{"id":"1.2.0","annotations":[],"membership_expiration_date":"1969-12-31T23:59:59","registrar":"1.2.0","referrer":"1.2.0","lifetime_referrer":"1.2.0","network_fee_percentage":2000,"lifetime_referrer_fee_percentage":8000,"referrer_rewards_percentage":0,"name":"committee-account","owner":{"weight_threshold":1,"account_auths":[],"key_auths":[],"address_auths":[]},"active":{"weight_threshold":6,"account_auths":[["1.2.5",1],["1.2.6",1],["1.2.7",1],["1.2.8",1],["1.2.9",1],["1.2.10",1],["1.2.11",1],["1.2.12",1],["1.2.13",1],["1.2.14",1]],"key_auths":[],"address_auths":[]},"options":{"memo_key":"GPH1111111111111111111111111111111114T1Anm","voting_account":"1.2.0","num_witness":0,"num_committee":0,"votes":[],"extensions":[]},"statistics":"2.7.0","whitelisting_accounts":[],"blacklisting_accounts":[]}]}
+    < {"id":1,"result":[{"id":"1.2.0","annotations":[],"membership_expiration_date":"1969-12-31T23:59:59","registrar":"1.2.0","referrer":"1.2.0","lifetime_referrer":"1.2.0","network_fee_percentage":2000,"lifetime_referrer_fee_percentage":8000,"referrer_rewards_percentage":0,"name":"committee-account","owner":{"weight_threshold":1,"account_auths":[],"key_auths":[],"address_auths":[]},"active":{"weight_threshold":6,"account_auths":[["1.2.5",1],["1.2.6",1],["1.2.7",1],["1.2.8",1],["1.2.9",1],["1.2.10",1],["1.2.11",1],["1.2.12",1],["1.2.13",1],["1.2.14",1]],"key_auths":[],"address_auths":[]},"options":{"memo_key":"BGC1111111111111111111111111111111114T1Anm","voting_account":"1.2.0","num_witness":0,"num_committee":0,"votes":[],"extensions":[]},"statistics":"2.7.0","whitelisting_accounts":[],"blacklisting_accounts":[]}]}
 
 We can do the same thing using an HTTP client such as `curl` for API's which do not require login or other session state:
 
     $ curl --data '{"jsonrpc": "2.0", "method": "call", "params": [0, "get_accounts", [["1.2.0"]]], "id": 1}' http://127.0.0.1:8090/rpc
-    {"id":1,"result":[{"id":"1.2.0","annotations":[],"membership_expiration_date":"1969-12-31T23:59:59","registrar":"1.2.0","referrer":"1.2.0","lifetime_referrer":"1.2.0","network_fee_percentage":2000,"lifetime_referrer_fee_percentage":8000,"referrer_rewards_percentage":0,"name":"committee-account","owner":{"weight_threshold":1,"account_auths":[],"key_auths":[],"address_auths":[]},"active":{"weight_threshold":6,"account_auths":[["1.2.5",1],["1.2.6",1],["1.2.7",1],["1.2.8",1],["1.2.9",1],["1.2.10",1],["1.2.11",1],["1.2.12",1],["1.2.13",1],["1.2.14",1]],"key_auths":[],"address_auths":[]},"options":{"memo_key":"GPH1111111111111111111111111111111114T1Anm","voting_account":"1.2.0","num_witness":0,"num_committee":0,"votes":[],"extensions":[]},"statistics":"2.7.0","whitelisting_accounts":[],"blacklisting_accounts":[]}]}
+    {"id":1,"result":[{"id":"1.2.0","annotations":[],"membership_expiration_date":"1969-12-31T23:59:59","registrar":"1.2.0","referrer":"1.2.0","lifetime_referrer":"1.2.0","network_fee_percentage":2000,"lifetime_referrer_fee_percentage":8000,"referrer_rewards_percentage":0,"name":"committee-account","owner":{"weight_threshold":1,"account_auths":[],"key_auths":[],"address_auths":[]},"active":{"weight_threshold":6,"account_auths":[["1.2.5",1],["1.2.6",1],["1.2.7",1],["1.2.8",1],["1.2.9",1],["1.2.10",1],["1.2.11",1],["1.2.12",1],["1.2.13",1],["1.2.14",1]],"key_auths":[],"address_auths":[]},"options":{"memo_key":"BGC1111111111111111111111111111111114T1Anm","voting_account":"1.2.0","num_witness":0,"num_committee":0,"votes":[],"extensions":[]},"statistics":"2.7.0","whitelisting_accounts":[],"blacklisting_accounts":[]}]}
 
 API 0 is accessible using regular JSON-RPC:
 
@@ -144,7 +144,7 @@ necessary to use the wallet:
        ]
     }
 
-Passwords are stored in `base64` as salted `sha256` hashes.  A simple Python script, `saltpass.py` is avaliable to obtain hash and salt values from a password.
+Passwords are stored in `base64` as as salted `sha256` hashes.  A simple Python script, `saltpass.py` is avaliable to obtain hash and salt values from a password.
 A single asterisk `"*"` may be specified as username or password hash to accept any value.
 
 With the above configuration, here is an example of how to call `add_node` from the `network_node` API:
@@ -165,7 +165,7 @@ it is fairly simple to write API methods to expose database methods.
 Running private testnet
 -----------------------
 
-See the [documentation](https://github.com/cryptonomex/graphene/wiki/private-testnet) if you want to run a private testnet.
+See the [documentation](https://github.com/bagcoin/bagcoin-2/wiki/private-testnet) if you want to run a private testnet.
 
 Questions
 ---------
@@ -196,7 +196,7 @@ Questions
     connections.  This is a famous source of security vulnerabilities for HTTP applications.  Additionally, HTTP is not really
     designed for "server push" notifications, and we would have to figure out a way to queue notifications for a polling client.
 
-    Websockets solves all these problems.  If you need to access Graphene's stateful methods, you need to use Websockets.
+    Websockets solves all these problems.  If you need to access Bagcoin's stateful methods, you need to use Websockets.
 
 - What is the meaning of `a.b.c` numbers?
 
@@ -207,7 +207,7 @@ Questions
 
     The second number specifies the *type*.  The type of the object determines what fields it has.  For a
     complete list of type ID's, see `enum object_type` and `enum impl_object_type` in
-    [types.hpp](https://github.com/cryptonomex/graphene/blob/master/libraries/chain/include/graphene/chain/protocol/types.hpp).
+    [types.hpp](https://github.com/bagcoin/bagcoin-2/blob/master/libraries/chain/include/bagcoin/chain/protocol/types.hpp).
 
     The third number specifies the *instance*.  The instance of the object is different for each individual
     object.

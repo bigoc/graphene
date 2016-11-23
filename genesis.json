@@ -1,0 +1,388 @@
+{
+  "initial_timestamp": "2016-11-23T07:00:00",
+  "max_core_supply": "1000000000000000",
+  "initial_parameters": { 
+    "current_fees": {
+      "parameters": [[
+          0,{
+            "fee": 100,
+            "price_per_kbyte": 10
+          }
+        ],[
+          1,{
+            "fee": 5
+          }
+        ],[
+          2,{
+            "fee": 0
+          }
+        ],[
+          3,{
+            "fee": 20
+          }
+        ],[
+          4,{}
+        ],[
+          5,{
+            "basic_fee": 5,
+            "premium_fee": 2000,
+            "price_per_kbyte": 1
+          }
+        ],[
+          6,{
+            "fee": 20,
+            "price_per_kbyte": 1
+          }
+        ],[
+          7,{
+            "fee": 3
+          }
+        ],[
+          8,{
+            "membership_annual_fee": 0,
+            "membership_lifetime_fee": 10000
+          }
+        ],[
+          9,{
+            "fee": 500
+          }
+        ],[
+          10,{
+            "symbol3": "5000000000",
+            "symbol4": "3000000000",
+            "long_symbol": 500000000,
+            "price_per_kbyte": 1
+          }
+        ],[
+          11,{
+            "fee": 500,
+            "price_per_kbyte": 1
+          }
+        ],[
+          12,{
+            "fee": 500
+          }
+        ],[
+          13,{
+            "fee": 500
+          }
+        ],[
+          14,{
+            "fee": 20,
+            "price_per_kbyte": 1
+          }
+        ],[
+          15,{
+            "fee": 20
+          }
+        ],[
+          16,{
+            "fee": 1
+          }
+        ],[
+          17,{
+            "fee": 100
+          }
+        ],[
+          18,{
+            "fee": 500
+          }
+        ],[
+          19,{
+            "fee": 1
+          }
+        ],[
+          20,{
+            "fee": 5000
+          }
+        ],[
+          21,{
+            "fee": 20
+          }
+        ],[
+          22,{
+            "fee": 20,
+            "price_per_kbyte": 1
+          }
+        ],[
+          23,{
+            "fee": 20,
+            "price_per_kbyte": 1
+          }
+        ],[
+          24,{
+            "fee": 1
+          }
+        ],[
+          25,{
+            "fee": 1
+          }
+        ],[
+          26,{
+            "fee": 1
+          }
+        ],[
+          27,{
+            "fee": 20,
+            "price_per_kbyte": 1
+          }
+        ],[
+          28,{
+            "fee": 0
+          }
+        ],[
+          29,{
+            "fee": 5000
+          }
+        ],[
+          30,{
+            "fee": 20
+          }
+        ],[
+          31,{
+            "fee": 1
+          }
+        ],[
+          32,{
+            "fee": 1
+          }
+        ],[
+          33,{
+            "fee": 20
+          }
+        ],[
+          34,{
+            "fee": 5000
+          }
+        ],[
+          35,{
+            "fee": 1,
+            "price_per_kbyte": 1
+          }
+        ],[
+          36,{
+            "fee": 1
+          }
+        ],[
+          37,{}
+        ],[
+          38,{
+            "fee": 20,
+            "price_per_kbyte": 1
+          }
+        ],[
+          39,{
+            "fee": 5,
+            "price_per_output": 5
+          }
+        ],[
+          40,{
+            "fee": 5,
+            "price_per_output": 5
+          }
+        ],[
+          41,{
+            "fee": 5
+          }
+        ],[
+          42,{}
+        ],[
+          43,{
+            "fee": 20
+          }
+        ],[
+          44,{}
+        ]
+      ],
+      "scale": 10000
+    },
+    "block_interval": 3,
+    "maintenance_interval": 86400,
+    "maintenance_skip_slots": 3,
+    "committee_proposal_review_period": 1209600,
+    "maximum_transaction_size": 2048,
+    "maximum_block_size": 2048000000,
+    "maximum_time_until_expiration": 86400,
+    "maximum_proposal_lifetime": 2419200,
+    "maximum_asset_whitelist_authorities": 10,
+    "maximum_asset_feed_publishers": 10,
+    "maximum_witness_count": 1001,
+    "maximum_committee_count": 1001,
+    "maximum_authority_membership": 10,
+    "reserve_percent_of_fee": 2000,
+    "network_percent_of_fee": 2000,
+    "lifetime_referrer_percent_of_fee": 3000,
+    "cashback_vesting_period_seconds": 31536000,
+    "cashback_vesting_threshold": 10000000,
+    "count_non_member_votes": true,
+    "allow_non_member_whitelists": false,
+    "witness_pay_per_block": 1,
+    "worker_budget_per_day": "28800",
+    "max_predicate_opcode": 1,
+    "fee_liquidation_threshold": 10000000,
+    "accounts_per_fee_scale": 1000,
+    "account_fee_scale_bitshifts": 4,
+    "max_authority_depth": 2,
+    "extensions": []
+  },
+  "initial_accounts": [{
+      "name": "openchain0",
+      "owner_key": "DBT6n1UkD9Tvnp96ytBG5pd3nkMKGvfZcZH66rcvzgVS6jSRGgq2p",
+      "active_key": "DBT6n1UkD9Tvnp96ytBG5pd3nkMKGvfZcZH66rcvzgVS6jSRGgq2p",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain1",
+      "owner_key": "DBT87NGcyp9e7cZH6bszgWioQRTs1PJ8wuypd6cGTPq3g8zACTXZM",
+      "active_key": "DBT87NGcyp9e7cZH6bszgWioQRTs1PJ8wuypd6cGTPq3g8zACTXZM",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain2",
+      "owner_key": "DBT7jtQBTXfg5wEgVquCcNeudZbuRG3uQgEGdERCjUoZnrp2F7msD",
+      "active_key": "DBT7jtQBTXfg5wEgVquCcNeudZbuRG3uQgEGdERCjUoZnrp2F7msD",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain3",
+      "owner_key": "DBT7RXjCLiQP1dPo1o3tVoVLbthPGJSrh7SkSdxDhykH9eqZW2yc1",
+      "active_key": "DBT7RXjCLiQP1dPo1o3tVoVLbthPGJSrh7SkSdxDhykH9eqZW2yc1",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain4",
+      "owner_key": "DBT8YqoNt8zYzwqwsRGgjPBbbDbAZ852986NbdWr3LqkK7vDZnUs8",
+      "active_key": "DBT8YqoNt8zYzwqwsRGgjPBbbDbAZ852986NbdWr3LqkK7vDZnUs8",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain5",
+      "owner_key": "DBT7wHKd2yC4xZ31LT3e3DshLxzeYQCjEYjvy9UZU1GRhcacQG5jg",
+      "active_key": "DBT7wHKd2yC4xZ31LT3e3DshLxzeYQCjEYjvy9UZU1GRhcacQG5jg",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain6",
+      "owner_key": "DBT6XEMfYtfSJ78ypwz5XSdVZgp5mEtWMv6rqD5i6wnovTVrPwqnd",
+      "active_key": "DBT6XEMfYtfSJ78ypwz5XSdVZgp5mEtWMv6rqD5i6wnovTVrPwqnd",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain7",
+      "owner_key": "DBT5dP1JvGU5q1tGwWhEM9J1XtCS6DAMWnWamioi5h291rq6sEAR4",
+      "active_key": "DBT5dP1JvGU5q1tGwWhEM9J1XtCS6DAMWnWamioi5h291rq6sEAR4",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain8",
+      "owner_key": "DBT6ne2cyhTEfezLNMccFpv1AhuaPqvNfhcpi83LKBt8HpX3z1Fjp",
+      "active_key": "DBT6ne2cyhTEfezLNMccFpv1AhuaPqvNfhcpi83LKBt8HpX3z1Fjp",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain9",
+      "owner_key": "DBT58q9P7RYYnmULoiZuZjKrkN9icMwhMtyK2zrTKctePeW8K5vib",
+      "active_key": "DBT58q9P7RYYnmULoiZuZjKrkN9icMwhMtyK2zrTKctePeW8K5vib",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain10",
+      "owner_key": "DBT58q9P7RYYnmULoiZuZjKrkN9icMwhMtyK2zrTKctePeW8K5vib",
+      "active_key": "DBT58q9P7RYYnmULoiZuZjKrkN9icMwhMtyK2zrTKctePeW8K5vib",
+      "is_lifetime_member": true
+    },{
+      "name": "kevin",
+      "owner_key": "DBT7mqcU6hKw3vwq1qVC2rh9LCznEL5ZmKiVHY9Z52JJs6w9WjrWy",
+      "active_key": "DBT7mqcU6hKw3vwq1qVC2rh9LCznEL5ZmKiVHY9Z52JJs6w9WjrWy",
+      "is_lifetime_member": true
+    },{
+      "name": "dabtc",
+      "owner_key": "DBT7mqcU6hKw3vwq1qVC2rh9LCznEL5ZmKiVHY9Z52JJs6w9WjrWy",
+      "active_key": "DBT7mqcU6hKw3vwq1qVC2rh9LCznEL5ZmKiVHY9Z52JJs6w9WjrWy",
+      "is_lifetime_member": true
+    },{
+      "name": "openchain",
+      "owner_key": "DBT7mqcU6hKw3vwq1qVC2rh9LCznEL5ZmKiVHY9Z52JJs6w9WjrWy",
+      "active_key": "DBT7mqcU6hKw3vwq1qVC2rh9LCznEL5ZmKiVHY9Z52JJs6w9WjrWy",
+      "is_lifetime_member": true
+    },{
+      "name": "exchange",
+      "owner_key": "DBT7mqcU6hKw3vwq1qVC2rh9LCznEL5ZmKiVHY9Z52JJs6w9WjrWy",
+      "active_key": "DBT7mqcU6hKw3vwq1qVC2rh9LCznEL5ZmKiVHY9Z52JJs6w9WjrWy",
+      "is_lifetime_member": true
+    },{
+      "name": "dbt",
+      "owner_key": "DBT7mqcU6hKw3vwq1qVC2rh9LCznEL5ZmKiVHY9Z52JJs6w9WjrWy",
+      "active_key": "DBT7mqcU6hKw3vwq1qVC2rh9LCznEL5ZmKiVHY9Z52JJs6w9WjrWy",
+      "is_lifetime_member": true
+    }
+  ],
+  "initial_assets": [
+  ],
+  "initial_balances": [
+    {
+      "owner": "DBTAtzRXcjVanDCd6ySH3XXk52XPuc38BemD",
+      "asset_symbol": "DBT",
+      "amount": "1000000000000000"
+    }
+  ],
+  "initial_vesting_balances": [],
+  "initial_active_witnesses": 11,
+  "initial_witness_candidates": [{
+      "owner_name": "openchain0",
+      "block_signing_key": "DBT6n1UkD9Tvnp96ytBG5pd3nkMKGvfZcZH66rcvzgVS6jSRGgq2p"
+    },{
+      "owner_name": "openchain1",
+      "block_signing_key": "DBT87NGcyp9e7cZH6bszgWioQRTs1PJ8wuypd6cGTPq3g8zACTXZM"
+    },{
+      "owner_name": "openchain2",
+      "block_signing_key": "DBT7jtQBTXfg5wEgVquCcNeudZbuRG3uQgEGdERCjUoZnrp2F7msD"
+    },{
+      "owner_name": "openchain3",
+      "block_signing_key": "DBT7RXjCLiQP1dPo1o3tVoVLbthPGJSrh7SkSdxDhykH9eqZW2yc1"
+    },{
+      "owner_name": "openchain4",
+      "block_signing_key": "DBT8YqoNt8zYzwqwsRGgjPBbbDbAZ852986NbdWr3LqkK7vDZnUs8"
+    },{
+      "owner_name": "openchain5",
+      "block_signing_key": "DBT7wHKd2yC4xZ31LT3e3DshLxzeYQCjEYjvy9UZU1GRhcacQG5jg"
+    },{
+      "owner_name": "openchain6",
+      "block_signing_key": "DBT6XEMfYtfSJ78ypwz5XSdVZgp5mEtWMv6rqD5i6wnovTVrPwqnd"
+    },{
+      "owner_name": "openchain7",
+      "block_signing_key": "DBT5dP1JvGU5q1tGwWhEM9J1XtCS6DAMWnWamioi5h291rq6sEAR4"
+    },{
+      "owner_name": "openchain8",
+      "block_signing_key": "DBT6ne2cyhTEfezLNMccFpv1AhuaPqvNfhcpi83LKBt8HpX3z1Fjp"
+    },{
+      "owner_name": "openchain9",
+      "block_signing_key": "DBT58q9P7RYYnmULoiZuZjKrkN9icMwhMtyK2zrTKctePeW8K5vib"
+    },{
+      "owner_name": "openchain10",
+      "block_signing_key": "DBT58q9P7RYYnmULoiZuZjKrkN9icMwhMtyK2zrTKctePeW8K5vib"
+    }
+  ],
+  "initial_committee_candidates": [{
+      "owner_name": "openchain0"
+    },{
+      "owner_name": "openchain1"
+    },{
+      "owner_name": "openchain2"
+    },{
+      "owner_name": "openchain3"
+    },{
+      "owner_name": "openchain4"
+    },{
+      "owner_name": "openchain5"
+    },{
+      "owner_name": "openchain6"
+    },{
+      "owner_name": "openchain7"
+    },{
+      "owner_name": "openchain8"
+    },{
+      "owner_name": "openchain9"
+    },{
+      "owner_name": "openchain10"
+    }
+  ],
+  "initial_worker_candidates": [],
+  "initial_chain_id": "65da8a1b0396222308ad32b2e22975ab74c0eed5bff8fe717c751c012bad2ab2",
+  "immutable_parameters": {
+    "min_committee_member_count": 11,
+    "min_witness_count": 11,
+    "num_special_accounts": 0,
+    "num_special_assets": 0
+  }
+}

@@ -449,8 +449,8 @@ void database::init_genesis(const genesis_state_type& genesis_state)
    const auto get_asset_id = [&assets_by_symbol](const string& symbol) {
       auto itr = assets_by_symbol.find(symbol);
 
-      // TODO: This is temporary for handling BTS snapshot
-      if( symbol == "BTS" )
+      // TODO: This is temporary for handling DBT snapshot
+      if( symbol == "DBT" )
           itr = assets_by_symbol.find(GRAPHENE_SYMBOL);
 
       FC_ASSERT(itr != assets_by_symbol.end(),
