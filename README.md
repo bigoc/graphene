@@ -1,9 +1,9 @@
 Intro for new developers
 ------------------------
 
-This is a quick introduction to get new developers up to speed on Bagcoin.
+This is a quick introduction to get new developers up to speed on Openchain.
 
-Starting Bagcoin
+Starting Openchain
 -----------------
 
 For Ubuntu 14.04 LTS users, see this link first:
@@ -11,8 +11,8 @@ For Ubuntu 14.04 LTS users, see this link first:
 
 and then proceed with:
 
-    git clone https://github.com/bagcoin/bagcoin-2.git
-    cd bagcoin-2
+    git clone https://github.com/bigoc/openchain.git
+    cd openchain
     git submodule update --init --recursive
     cmake -DCMAKE_BUILD_TYPE=Debug .
     make
@@ -40,7 +40,7 @@ To import your initial balance:
 If you send private keys over this connection, `rpc-endpoint` should be bound to localhost for security.
 
 A list of CLI wallet commands is available
-[here](https://github.com/bagcoin/bagcoin-2/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp).
+[here](https://github.com/bigoc/openchain/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp).
 
 Code coverage testing
 ---------------------
@@ -165,7 +165,7 @@ it is fairly simple to write API methods to expose database methods.
 Running private testnet
 -----------------------
 
-See the [documentation](https://github.com/bagcoin/bagcoin-2/wiki/private-testnet) if you want to run a private testnet.
+See the [documentation](https://github.com/bigoc/openchain/wiki/private-testnet) if you want to run a private testnet.
 
 Questions
 ---------
@@ -196,7 +196,7 @@ Questions
     connections.  This is a famous source of security vulnerabilities for HTTP applications.  Additionally, HTTP is not really
     designed for "server push" notifications, and we would have to figure out a way to queue notifications for a polling client.
 
-    Websockets solves all these problems.  If you need to access Bagcoin's stateful methods, you need to use Websockets.
+    Websockets solves all these problems.  If you need to access Openchain's stateful methods, you need to use Websockets.
 
 - What is the meaning of `a.b.c` numbers?
 
@@ -207,7 +207,7 @@ Questions
 
     The second number specifies the *type*.  The type of the object determines what fields it has.  For a
     complete list of type ID's, see `enum object_type` and `enum impl_object_type` in
-    [types.hpp](https://github.com/bagcoin/bagcoin-2/blob/master/libraries/chain/include/bagcoin/chain/protocol/types.hpp).
+    [types.hpp](https://github.com/bigoc/openchain/blob/master/libraries/chain/include/graphene/chain/protocol/types.hpp).
 
     The third number specifies the *instance*.  The instance of the object is different for each individual
     object.
