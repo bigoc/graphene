@@ -166,7 +166,7 @@ it is fairly simple to write API methods to expose database methods.
 Running private testnet
 -----------------------
 
-See the [documentation](https://github.com/bigoc/openchain/wiki/private-testnet) if you want to run a private testnet.
+See the [documentation](https://github.com/cryptonomex/graphene/wiki/private-testnet) if you want to run a private testnet.
 
 Questions
 ---------
