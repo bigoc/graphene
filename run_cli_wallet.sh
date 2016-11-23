@@ -1,1 +1,1 @@
-./programs/cli_wallet/cli_wallet -r 127.0.0.1:28886 -s ws://127.0.0.1:28887 --chain-id 155b6a250549ea8e29f3b445942437a7d791f6cb100d0de0b7bd88da541b8601
+./programs/cli_wallet/cli_wallet -r 127.0.0.1:28886 -s ws://blockchain.bigbitchain.com:28887 --chain-id 155b6a250549ea8e29f3b445942437a7d791f6cb100d0de0b7bd88da541b8601

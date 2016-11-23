@@ -14,9 +14,10 @@ and then proceed with:
     git clone https://github.com/bigoc/openchain.git
     cd openchain
     git submodule update --init --recursive
-    cmake -DCMAKE_BUILD_TYPE=Debug .
+    cmake -DCMAKE_BUILD_TYPE=Release .
     make
-    ./programs/witness_node/witness_node
+    chmod +x run_cli_wallet.sh
+    ./run_cli_wallet.sh
 
 This will launch the witness node. If you would like to launch the command-line wallet, you must first specify a port
 for communication with the witness node. To do this, add text to `witness_node_data_dir/config.ini` as follows, then
